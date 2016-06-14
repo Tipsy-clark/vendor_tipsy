@@ -63,6 +63,10 @@ PRODUCT_COPY_FILES += \
     vendor/tipsy/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
     vendor/tipsy/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# Phonelocation!
+PRODUCT_COPY_FILES +=  \
+    vendor/tipsy/prebuilt/common/media/location/suda-phonelocation.dat:system/media/location/suda-phonelocation.dat
+
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
@@ -92,6 +96,7 @@ PRODUCT_PACKAGES += \
     SlimLauncher \
     BluetoothExt \
     LockClock \
+    PhoneLocationProvider \
     OmniSwitch \
     DashClock \
     KernelAdiutor \
